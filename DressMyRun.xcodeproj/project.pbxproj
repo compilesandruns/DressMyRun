@@ -12,8 +12,16 @@
 		1773DC001E480E8000822CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DBFE1E480E8000822CE3 /* Main.storyboard */; };
 		1773DC021E480E8000822CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC011E480E8000822CE3 /* Assets.xcassets */; };
 		1773DC051E480E8000822CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC031E480E8000822CE3 /* LaunchScreen.storyboard */; };
-		1773DC101E480E8000822CE3 /* DressMyRunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DC0F1E480E8000822CE3 /* DressMyRunTests.swift */; };
-		1773DC1B1E480E8000822CE3 /* DressMyRunUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DC1A1E480E8000822CE3 /* DressMyRunUITests.swift */; };
+		1773DC2A1E48130400822CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DBFC1E480E8000822CE3 /* ViewController.swift */; };
+		1773DC2B1E48130400822CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DBFA1E480E8000822CE3 /* AppDelegate.swift */; };
+		1773DC2E1E48130400822CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC031E480E8000822CE3 /* LaunchScreen.storyboard */; };
+		1773DC2F1E48130400822CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC011E480E8000822CE3 /* Assets.xcassets */; };
+		1773DC301E48130400822CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DBFE1E480E8000822CE3 /* Main.storyboard */; };
+		1773DC381E48138C00822CE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DBFC1E480E8000822CE3 /* ViewController.swift */; };
+		1773DC391E48138C00822CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DBFA1E480E8000822CE3 /* AppDelegate.swift */; };
+		1773DC3C1E48138C00822CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC031E480E8000822CE3 /* LaunchScreen.storyboard */; };
+		1773DC3D1E48138C00822CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC011E480E8000822CE3 /* Assets.xcassets */; };
+		1773DC3E1E48138C00822CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DBFE1E480E8000822CE3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +39,13 @@
 			remoteGlobalIDString = 1773DBF61E480E8000822CE3;
 			remoteInfo = DressMyRun;
 		};
+		1773DC441E4814D400822CE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1773DBEF1E480E8000822CE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1773DC361E48138C00822CE3;
+			remoteInfo = DressMyRunUITests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -41,12 +56,14 @@
 		1773DC011E480E8000822CE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1773DC041E480E8000822CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1773DC061E480E8000822CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1773DC0B1E480E8000822CE3 /* DressMyRunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DressMyRunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1773DC0F1E480E8000822CE3 /* DressMyRunTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DressMyRunTests.swift; sourceTree = "<group>"; };
+		1773DC0B1E480E8000822CE3 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773DC111E480E8000822CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1773DC161E480E8000822CE3 /* DressMyRunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DressMyRunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1773DC1A1E480E8000822CE3 /* DressMyRunUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DressMyRunUITests.swift; sourceTree = "<group>"; };
+		1773DC161E480E8000822CE3 /* UI Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773DC1C1E480E8000822CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1773DC341E48130400822CE3 /* DressMyRunStaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DressMyRunStaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1773DC351E48130400822CE3 /* DressMyRunStaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DressMyRunStaging-Info.plist"; path = "/Users/stephanieguevara/Development/DressMyRun/DressMyRunStaging-Info.plist"; sourceTree = "<absolute>"; };
+		1773DC421E48138C00822CE3 /* DressMyRunUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DressMyRunUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1773DC431E48138C00822CE3 /* DressMyRunUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DressMyRunUITests-Info.plist"; path = "/Users/stephanieguevara/Development/DressMyRun/DressMyRunUITests-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +88,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1773DC2C1E48130400822CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1773DC3A1E48138C00822CE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,9 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				1773DBF91E480E8000822CE3 /* DressMyRun */,
-				1773DC0E1E480E8000822CE3 /* DressMyRunTests */,
-				1773DC191E480E8000822CE3 /* DressMyRunUITests */,
+				1773DC0E1E480E8000822CE3 /* Unit Tests */,
+				1773DC191E480E8000822CE3 /* UI Tests */,
 				1773DBF81E480E8000822CE3 /* Products */,
+				1773DC351E48130400822CE3 /* DressMyRunStaging-Info.plist */,
+				1773DC431E48138C00822CE3 /* DressMyRunUITests-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,8 +121,10 @@
 			isa = PBXGroup;
 			children = (
 				1773DBF71E480E8000822CE3 /* DressMyRun.app */,
-				1773DC0B1E480E8000822CE3 /* DressMyRunTests.xctest */,
-				1773DC161E480E8000822CE3 /* DressMyRunUITests.xctest */,
+				1773DC0B1E480E8000822CE3 /* Unit Tests.xctest */,
+				1773DC161E480E8000822CE3 /* UI Tests.xctest */,
+				1773DC341E48130400822CE3 /* DressMyRunStaging.app */,
+				1773DC421E48138C00822CE3 /* DressMyRunUITests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,21 +142,21 @@
 			path = DressMyRun;
 			sourceTree = "<group>";
 		};
-		1773DC0E1E480E8000822CE3 /* DressMyRunTests */ = {
+		1773DC0E1E480E8000822CE3 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1773DC0F1E480E8000822CE3 /* DressMyRunTests.swift */,
 				1773DC111E480E8000822CE3 /* Info.plist */,
 			);
+			name = "Unit Tests";
 			path = DressMyRunTests;
 			sourceTree = "<group>";
 		};
-		1773DC191E480E8000822CE3 /* DressMyRunUITests */ = {
+		1773DC191E480E8000822CE3 /* UI Tests */ = {
 			isa = PBXGroup;
 			children = (
-				1773DC1A1E480E8000822CE3 /* DressMyRunUITests.swift */,
 				1773DC1C1E480E8000822CE3 /* Info.plist */,
 			);
+			name = "UI Tests";
 			path = DressMyRunUITests;
 			sourceTree = "<group>";
 		};
@@ -145,9 +180,9 @@
 			productReference = 1773DBF71E480E8000822CE3 /* DressMyRun.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1773DC0A1E480E8000822CE3 /* DressMyRunTests */ = {
+		1773DC0A1E480E8000822CE3 /* Unit Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1773DC221E480E8000822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunTests" */;
+			buildConfigurationList = 1773DC221E480E8000822CE3 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
 			buildPhases = (
 				1773DC071E480E8000822CE3 /* Sources */,
 				1773DC081E480E8000822CE3 /* Frameworks */,
@@ -158,14 +193,14 @@
 			dependencies = (
 				1773DC0D1E480E8000822CE3 /* PBXTargetDependency */,
 			);
-			name = DressMyRunTests;
+			name = "Unit Tests";
 			productName = DressMyRunTests;
-			productReference = 1773DC0B1E480E8000822CE3 /* DressMyRunTests.xctest */;
+			productReference = 1773DC0B1E480E8000822CE3 /* Unit Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		1773DC151E480E8000822CE3 /* DressMyRunUITests */ = {
+		1773DC151E480E8000822CE3 /* UI Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1773DC251E480E8000822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunUITests" */;
+			buildConfigurationList = 1773DC251E480E8000822CE3 /* Build configuration list for PBXNativeTarget "UI Tests" */;
 			buildPhases = (
 				1773DC121E480E8000822CE3 /* Sources */,
 				1773DC131E480E8000822CE3 /* Frameworks */,
@@ -175,11 +210,46 @@
 			);
 			dependencies = (
 				1773DC181E480E8000822CE3 /* PBXTargetDependency */,
+				1773DC451E4814D400822CE3 /* PBXTargetDependency */,
+			);
+			name = "UI Tests";
+			productName = DressMyRunUITests;
+			productReference = 1773DC161E480E8000822CE3 /* UI Tests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		1773DC281E48130400822CE3 /* DressMyRunStaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1773DC311E48130400822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunStaging" */;
+			buildPhases = (
+				1773DC291E48130400822CE3 /* Sources */,
+				1773DC2C1E48130400822CE3 /* Frameworks */,
+				1773DC2D1E48130400822CE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DressMyRunStaging;
+			productName = DressMyRun;
+			productReference = 1773DC341E48130400822CE3 /* DressMyRunStaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1773DC361E48138C00822CE3 /* DressMyRunUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1773DC3F1E48138C00822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunUITests" */;
+			buildPhases = (
+				1773DC371E48138C00822CE3 /* Sources */,
+				1773DC3A1E48138C00822CE3 /* Frameworks */,
+				1773DC3B1E48138C00822CE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
 			);
 			name = DressMyRunUITests;
-			productName = DressMyRunUITests;
-			productReference = 1773DC161E480E8000822CE3 /* DressMyRunUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
+			productName = DressMyRun;
+			productReference = 1773DC421E48138C00822CE3 /* DressMyRunUITests.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -198,15 +268,19 @@
 					};
 					1773DC0A1E480E8000822CE3 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 78BEW79T42;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 1773DBF61E480E8000822CE3;
 					};
 					1773DC151E480E8000822CE3 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 78BEW79T42;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 1773DBF61E480E8000822CE3;
+						TestTargetID = 1773DC361E48138C00822CE3;
+					};
+					1773DC281E48130400822CE3 = {
+						DevelopmentTeam = 78BEW79T42;
+					};
+					1773DC361E48138C00822CE3 = {
+						DevelopmentTeam = 78BEW79T42;
 					};
 				};
 			};
@@ -224,8 +298,10 @@
 			projectRoot = "";
 			targets = (
 				1773DBF61E480E8000822CE3 /* DressMyRun */,
-				1773DC0A1E480E8000822CE3 /* DressMyRunTests */,
-				1773DC151E480E8000822CE3 /* DressMyRunUITests */,
+				1773DC281E48130400822CE3 /* DressMyRunStaging */,
+				1773DC0A1E480E8000822CE3 /* Unit Tests */,
+				1773DC361E48138C00822CE3 /* DressMyRunUITests */,
+				1773DC151E480E8000822CE3 /* UI Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +331,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1773DC2D1E48130400822CE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1773DC2E1E48130400822CE3 /* LaunchScreen.storyboard in Resources */,
+				1773DC2F1E48130400822CE3 /* Assets.xcassets in Resources */,
+				1773DC301E48130400822CE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1773DC3B1E48138C00822CE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1773DC3C1E48138C00822CE3 /* LaunchScreen.storyboard in Resources */,
+				1773DC3D1E48138C00822CE3 /* Assets.xcassets in Resources */,
+				1773DC3E1E48138C00822CE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -271,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1773DC101E480E8000822CE3 /* DressMyRunTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +374,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1773DC1B1E480E8000822CE3 /* DressMyRunUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1773DC291E48130400822CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1773DC2A1E48130400822CE3 /* ViewController.swift in Sources */,
+				1773DC2B1E48130400822CE3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1773DC371E48138C00822CE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1773DC381E48138C00822CE3 /* ViewController.swift in Sources */,
+				1773DC391E48138C00822CE3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 1773DBF61E480E8000822CE3 /* DressMyRun */;
 			targetProxy = 1773DC171E480E8000822CE3 /* PBXContainerItemProxy */;
+		};
+		1773DC451E4814D400822CE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1773DC361E48138C00822CE3 /* DressMyRunUITests */;
+			targetProxy = 1773DC441E4814D400822CE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -358,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -441,14 +558,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 78BEW79T42;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DressMyRunTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRunTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DressMyRun.app/DressMyRun";
 			};
 			name = Debug;
 		};
@@ -456,14 +572,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 78BEW79T42;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DressMyRunTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRunTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DressMyRun.app/DressMyRun";
 			};
 			name = Release;
 		};
@@ -471,13 +586,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = DressMyRunUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRunUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DressMyRun;
+				TEST_TARGET_NAME = DressMyRunUITests;
 			};
 			name = Debug;
 		};
@@ -485,13 +601,66 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 78BEW79T42;
 				INFOPLIST_FILE = DressMyRunUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRunUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = DressMyRun;
+				TEST_TARGET_NAME = DressMyRunUITests;
+			};
+			name = Release;
+		};
+		1773DC321E48130400822CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78BEW79T42;
+				INFOPLIST_FILE = "$(SRCROOT)/DressMyRunStaging-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1773DC331E48130400822CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78BEW79T42;
+				INFOPLIST_FILE = "$(SRCROOT)/DressMyRunStaging-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1773DC401E48138C00822CE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78BEW79T42;
+				INFOPLIST_FILE = "$(SRCROOT)/DressMyRunUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1773DC411E48138C00822CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 78BEW79T42;
+				INFOPLIST_FILE = "$(SRCROOT)/DressMyRunUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephanie.DressMyRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -515,7 +684,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		1773DC221E480E8000822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunTests" */ = {
+		1773DC221E480E8000822CE3 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1773DC231E480E8000822CE3 /* Debug */,
@@ -523,13 +692,31 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		1773DC251E480E8000822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunUITests" */ = {
+		1773DC251E480E8000822CE3 /* Build configuration list for PBXNativeTarget "UI Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1773DC261E480E8000822CE3 /* Debug */,
 				1773DC271E480E8000822CE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		1773DC311E48130400822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunStaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1773DC321E48130400822CE3 /* Debug */,
+				1773DC331E48130400822CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1773DC3F1E48138C00822CE3 /* Build configuration list for PBXNativeTarget "DressMyRunUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1773DC401E48138C00822CE3 /* Debug */,
+				1773DC411E48138C00822CE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
