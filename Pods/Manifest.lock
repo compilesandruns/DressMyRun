@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.3.0)
+  - Fakery (2.0.0)
+  - Nimble (6.0.0)
+  - PromiseKit/CorePromise (4.1.3)
+  - PromiseKit/MessageUI (4.1.3):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.1.3):
+    - PromiseKit/CorePromise
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - Fakery
+  - Nimble
+  - PromiseKit/CorePromise
+  - PromiseKit/MessageUI
+  - PromiseKit/UIKit
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
+  Nimble: 8fb9b4b34c535b2f32f52c6b9852d6f02d48610b
+  PromiseKit: 56baec63efa89210c023260879435a5a6b3bff00
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: c99aba137d5bf61dafc6e6e1d9496bfca1cc43d4
+
+COCOAPODS: 1.2.0
