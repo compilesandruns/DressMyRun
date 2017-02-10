@@ -66,7 +66,6 @@
 		9A2E25F81E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E25F61E4979EE00EE6EC8 /* SettingsScreen.storyboard */; };
 		9A2E25F91E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E25F61E4979EE00EE6EC8 /* SettingsScreen.storyboard */; };
 		B4711A19342D785497EDE19F /* Pods_DressMyRunTargets_DressMyRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ED81B29BBAE01CD78EC67F /* Pods_DressMyRunTargets_DressMyRun.framework */; };
-		BAC4C3A64F1916848C1A004C /* Pods_DressMyRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DD392F5824A868FDA4B8713 /* Pods_DressMyRun.framework */; };
 		C0FA2019A0F3980D5DABC0CD /* Pods_DressMyRunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F701568089B42C890576745D /* Pods_DressMyRunUITests.framework */; };
 		E04F7CCD990FA427EEB5E0A9 /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861D872049E997BAC3079CC7 /* Pods_Unit_Tests.framework */; };
 		E83E1AFA21D0B8978A826C5A /* Pods_DressMyRunStaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DB62070D4F45C8AEDEC043 /* Pods_DressMyRunStaging.framework */; };
@@ -159,7 +158,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BAC4C3A64F1916848C1A004C /* Pods_DressMyRun.framework in Frameworks */,
 				B4711A19342D785497EDE19F /* Pods_DressMyRunTargets_DressMyRun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
