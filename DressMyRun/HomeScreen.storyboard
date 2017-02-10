@@ -91,6 +91,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="conditionsIcon" destination="Pur-rr-klJ" id="Imi-hf-BhQ"/>
+                        <outlet property="conditionsLabel" destination="z8i-c4-Wmd" id="u5c-r7-ybE"/>
+                        <outlet property="realFeelLabel" destination="FNU-Gi-xF7" id="AE7-cy-2kY"/>
+                        <outlet property="tempuratureLabel" destination="q7D-9s-rxw" id="qZ3-g7-AU1"/>
+                        <outlet property="windSpeedLabel" destination="aFT-oI-bJx" id="rQc-Ip-F0R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGS-RS-d7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

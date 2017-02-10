@@ -6,4 +6,10 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
-import Foundation
+class HomeScreenPresenter {
+    unowned let view: HomeScreenViewable
+    
+    init(view:HomeScreenViewable) {
+        self.view = view
+    }
+}

@@ -6,4 +6,6 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
-import Foundation
+protocol HomeScreenViewable: class {
+    
+}
