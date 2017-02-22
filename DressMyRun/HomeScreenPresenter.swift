@@ -6,7 +6,7 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
-class HomeScreenPresenter {
+class HomeScreenPresenter: HomeScreenPresenting {
     unowned let view: HomeScreenViewable
     
     init(view:HomeScreenViewable) {

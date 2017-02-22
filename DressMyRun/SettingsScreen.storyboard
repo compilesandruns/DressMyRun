@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Settings-->
+        <!--View Controller-->
         <scene sceneID="6eA-aq-POp">
             <objects>
                 <viewController id="EKb-QS-aQj" sceneMemberID="viewController">
@@ -20,9 +21,95 @@
                     <view key="view" contentMode="scaleToFill" id="piP-WX-AUh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iD-5p-5aI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="eYu-bJ-Wg8"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yhg-w8-Xif">
+                                <rect key="frame" x="0.0" y="125" width="375" height="542"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="45" id="Jh9-CE-JRq">
+                                        <rect key="frame" x="0.0" y="56" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jh9-CE-JRq" id="GCf-bF-c5K">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1DQ-cH-YVm">
+                                                    <rect key="frame" x="10" y="10" width="355" height="35"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1DQ-cH-YVm" firstAttribute="leading" secondItem="GCf-bF-c5K" secondAttribute="leading" constant="10" id="Ey3-gW-nO8"/>
+                                                <constraint firstItem="1DQ-cH-YVm" firstAttribute="trailing" secondItem="GCf-bF-c5K" secondAttribute="trailing" constant="-10" id="PE7-4n-rV6"/>
+                                                <constraint firstItem="1DQ-cH-YVm" firstAttribute="top" secondItem="GCf-bF-c5K" secondAttribute="top" constant="10" id="Upp-kO-ysR"/>
+                                                <constraint firstAttribute="bottom" secondItem="1DQ-cH-YVm" secondAttribute="bottom" id="zqi-1P-e5s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="45" id="vNR-By-rMu">
+                                        <rect key="frame" x="0.0" y="101" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vNR-By-rMu" id="vm3-wX-rjs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gqt-YL-O8i">
+                                                    <rect key="frame" x="10" y="-32" width="355" height="67"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Gqt-YL-O8i" secondAttribute="bottom" constant="10" id="Adg-Z7-eTK"/>
+                                                <constraint firstAttribute="trailing" secondItem="Gqt-YL-O8i" secondAttribute="trailing" constant="10" id="ksU-2d-9vw"/>
+                                                <constraint firstItem="Gqt-YL-O8i" firstAttribute="top" secondItem="vm3-wX-rjs" secondAttribute="topMargin" constant="-40" id="pSI-QD-6So"/>
+                                                <constraint firstItem="Gqt-YL-O8i" firstAttribute="leading" secondItem="vm3-wX-rjs" secondAttribute="leading" constant="10" id="uhr-1y-w2d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="90" id="KJj-bW-Z0f">
+                                        <rect key="frame" x="0.0" y="146" width="375" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KJj-bW-Z0f" id="3xC-9k-2KU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oIC-RJ-buG">
+                                                    <rect key="frame" x="10" y="10" width="355" height="70"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oIC-RJ-buG" firstAttribute="bottom" secondItem="3xC-9k-2KU" secondAttribute="bottom" constant="-10" id="74N-ni-F4R"/>
+                                                <constraint firstItem="oIC-RJ-buG" firstAttribute="leading" secondItem="3xC-9k-2KU" secondAttribute="leading" constant="10" id="HZf-4N-x0I"/>
+                                                <constraint firstItem="oIC-RJ-buG" firstAttribute="top" secondItem="3xC-9k-2KU" secondAttribute="top" constant="10" id="b6e-Ze-DyT"/>
+                                                <constraint firstItem="oIC-RJ-buG" firstAttribute="trailing" secondItem="3xC-9k-2KU" secondAttribute="trailing" constant="-10" id="fPa-Ur-hZS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8iD-5p-5aI" firstAttribute="leading" secondItem="piP-WX-AUh" secondAttribute="leading" id="1mx-cv-9nl"/>
+                            <constraint firstAttribute="trailing" secondItem="8iD-5p-5aI" secondAttribute="trailing" id="91Y-e5-uLu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yhg-w8-Xif" secondAttribute="bottom" id="GRT-lD-nr6"/>
+                            <constraint firstItem="yhg-w8-Xif" firstAttribute="leading" secondItem="piP-WX-AUh" secondAttribute="leading" id="IPs-0p-g8B"/>
+                            <constraint firstItem="yhg-w8-Xif" firstAttribute="top" secondItem="8iD-5p-5aI" secondAttribute="bottom" id="r64-cp-9Kf"/>
+                            <constraint firstItem="8iD-5p-5aI" firstAttribute="top" secondItem="piP-WX-AUh" secondAttribute="topMargin" id="xjO-Wh-Hxj"/>
+                            <constraint firstAttribute="trailing" secondItem="yhg-w8-Xif" secondAttribute="trailing" id="yMP-MV-zWX"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="2AB-v2-Ukl"/>
+                    <navigationItem key="navigationItem" id="2AB-v2-Ukl">
+                        <barButtonItem key="rightBarButtonItem" title="Close" id="1kd-Dw-Djw"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jz4-vh-Q1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,7 +120,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lOO-nV-k2U" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tIa-cS-hzh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tIa-cS-hzh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

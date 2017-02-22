@@ -29,6 +29,15 @@
 		1773DC391E48138C00822CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1773DBFA1E480E8000822CE3 /* AppDelegate.swift */; };
 		1773DC3C1E48138C00822CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC031E480E8000822CE3 /* LaunchScreen.storyboard */; };
 		1773DC3D1E48138C00822CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1773DC011E480E8000822CE3 /* Assets.xcassets */; };
+		17F4745B1E5D3DDB0036E0AE /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1751ABDD1E4D6F0B00E2AE75 /* Injector.swift */; };
+		17F474631E5D46D70036E0AE /* blue highway bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F4745F1E5D46D70036E0AE /* blue highway bd.ttf */; };
+		17F474641E5D46D70036E0AE /* blue highway cd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F474601E5D46D70036E0AE /* blue highway cd.ttf */; };
+		17F474651E5D46D70036E0AE /* blue highway d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F474611E5D46D70036E0AE /* blue highway d.ttf */; };
+		17F474661E5D46D70036E0AE /* blue highway rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F474621E5D46D70036E0AE /* blue highway rg.ttf */; };
+		17F474671E5D474B0036E0AE /* blue highway bd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F4745F1E5D46D70036E0AE /* blue highway bd.ttf */; };
+		17F474681E5D474E0036E0AE /* blue highway cd.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F474601E5D46D70036E0AE /* blue highway cd.ttf */; };
+		17F474691E5D47530036E0AE /* blue highway d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F474611E5D46D70036E0AE /* blue highway d.ttf */; };
+		17F4746A1E5D47570036E0AE /* blue highway rg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17F474621E5D46D70036E0AE /* blue highway rg.ttf */; };
 		227F682BA81A3BA88A23FEB6 /* Pods_DressMyRunTargets_DressMyRunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A395E423D5CD52DB7B9ED6B0 /* Pods_DressMyRunTargets_DressMyRunUITests.framework */; };
 		79E9CB38C1113B781F035CB2 /* Pods_DressMyRunTargets_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B39C7C24D7D22D32661090F2 /* Pods_DressMyRunTargets_Unit_Tests.framework */; };
 		8298183FE4E28827337D8798 /* Pods_UI_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DEF0E2E971C9B47BAB0C32 /* Pods_UI_Tests.framework */; };
@@ -138,6 +147,10 @@
 		1773DC351E48130400822CE3 /* DressMyRunStaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DressMyRunStaging-Info.plist"; path = "/Users/stephanieguevara/Development/DressMyRun/DressMyRunStaging-Info.plist"; sourceTree = "<absolute>"; };
 		1773DC421E48138C00822CE3 /* DressMyRunUITests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DressMyRunUITests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1773DC431E48138C00822CE3 /* DressMyRunUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "DressMyRunUITests-Info.plist"; path = "/Users/stephanieguevara/Development/DressMyRun/DressMyRunUITests-Info.plist"; sourceTree = "<absolute>"; };
+		17F4745F1E5D46D70036E0AE /* blue highway bd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blue highway bd.ttf"; path = "../../../Downloads/blue_highway/blue highway bd.ttf"; sourceTree = "<group>"; };
+		17F474601E5D46D70036E0AE /* blue highway cd.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blue highway cd.ttf"; path = "../../../Downloads/blue_highway/blue highway cd.ttf"; sourceTree = "<group>"; };
+		17F474611E5D46D70036E0AE /* blue highway d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blue highway d.ttf"; path = "../../../Downloads/blue_highway/blue highway d.ttf"; sourceTree = "<group>"; };
+		17F474621E5D46D70036E0AE /* blue highway rg.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "blue highway rg.ttf"; path = "../../../Downloads/blue_highway/blue highway rg.ttf"; sourceTree = "<group>"; };
 		2EE24EE6F8EC91ECA3DD67CD /* Pods-DressMyRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DressMyRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DressMyRun/Pods-DressMyRun.debug.xcconfig"; sourceTree = "<group>"; };
 		310156B13B376B19F363FD0F /* Pods-DressMyRunTargets-DressMyRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DressMyRunTargets-DressMyRun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DressMyRunTargets-DressMyRun/Pods-DressMyRunTargets-DressMyRun.debug.xcconfig"; sourceTree = "<group>"; };
 		42DB62070D4F45C8AEDEC043 /* Pods_DressMyRunStaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DressMyRunStaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +242,7 @@
 		1751ABD31E4D693000E2AE75 /* UI Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				17F4745C1E5D46300036E0AE /* Fonts */,
 				1751ABE81E4D734300E2AE75 /* Errors */,
 				1751ABDC1E4D6A8900E2AE75 /* Protocols */,
 				1751ABD41E4D694400E2AE75 /* BaseViewController.swift */,
@@ -328,6 +342,17 @@
 			);
 			name = "UI Tests";
 			path = DressMyRunUITests;
+			sourceTree = "<group>";
+		};
+		17F4745C1E5D46300036E0AE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				17F4745F1E5D46D70036E0AE /* blue highway bd.ttf */,
+				17F474601E5D46D70036E0AE /* blue highway cd.ttf */,
+				17F474611E5D46D70036E0AE /* blue highway d.ttf */,
+				17F474621E5D46D70036E0AE /* blue highway rg.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		192E28C882A2271490274E03 /* Frameworks */ = {
@@ -582,10 +607,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2E25F71E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */,
+				17F474661E5D46D70036E0AE /* blue highway rg.ttf in Resources */,
 				9A2E25B91E49773B00EE6EC8 /* HomeScreen.storyboard in Resources */,
 				1773DC051E480E8000822CE3 /* LaunchScreen.storyboard in Resources */,
+				17F474651E5D46D70036E0AE /* blue highway d.ttf in Resources */,
 				1773DC021E480E8000822CE3 /* Assets.xcassets in Resources */,
+				17F474631E5D46D70036E0AE /* blue highway bd.ttf in Resources */,
 				9A2E25F31E4979A100EE6EC8 /* ManualEntryScreen.storyboard in Resources */,
+				17F474641E5D46D70036E0AE /* blue highway cd.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,10 +640,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2E25F81E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */,
+				17F4746A1E5D47570036E0AE /* blue highway rg.ttf in Resources */,
 				9A2E25BA1E49773B00EE6EC8 /* HomeScreen.storyboard in Resources */,
 				1773DC2E1E48130400822CE3 /* LaunchScreen.storyboard in Resources */,
+				17F474691E5D47530036E0AE /* blue highway d.ttf in Resources */,
 				1773DC2F1E48130400822CE3 /* Assets.xcassets in Resources */,
+				17F474671E5D474B0036E0AE /* blue highway bd.ttf in Resources */,
 				9A2E25F41E4979A100EE6EC8 /* ManualEntryScreen.storyboard in Resources */,
+				17F474681E5D474E0036E0AE /* blue highway cd.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +959,7 @@
 				9A2E25DF1E49792C00EE6EC8 /* ManualEntryPresenting.swift in Sources */,
 				9A2E25E41E49796A00EE6EC8 /* SettingsViewController.swift in Sources */,
 				9A2E25D71E49790F00EE6EC8 /* ManualEntryPresenter.swift in Sources */,
+				17F4745B1E5D3DDB0036E0AE /* Injector.swift in Sources */,
 				9A2E25DB1E49791D00EE6EC8 /* ManualEntryViewable.swift in Sources */,
 				1773DC2B1E48130400822CE3 /* AppDelegate.swift in Sources */,
 				9A2E25EC1E49797E00EE6EC8 /* SettingsPresenting.swift in Sources */,

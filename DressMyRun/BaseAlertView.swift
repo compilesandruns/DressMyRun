@@ -30,7 +30,7 @@ extension BaseAlertView {
     func showAlert(message: String, title: String?) -> Promise<Void> {
         return Promise { fulfill, reject in
             let alert = PMKAlertController(title: title, message: message)
-            alert.addActionWithTitle(title: "Ok")
+            _ = alert.addActionWithTitle(title: "Ok")
             currentMainViewController.promise(alert).always {
                 fulfill()
             }

@@ -9,10 +9,14 @@
 class Injector {
     var errorHelper: ErrorHelper!
     
-    private static var defaultInjector: Injector!
+    private static var injector: Injector!
     
     static var currentInjector: Injector {
-        return defaultInjector
+        return injector
+    }
+    
+    static func setInjector(injector: Injector) {
+        self.injector = injector
     }
     
     init() {

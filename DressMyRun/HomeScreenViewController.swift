@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeScreenViewController: BaseViewController {
-    let presenter: HomeScreenPresenting!
+    var presenter: HomeScreenPresenting!
     
     @IBOutlet weak var conditionsIcon: UIImageView!
     @IBOutlet weak var tempuratureLabel: UILabel!
@@ -17,14 +17,14 @@ class HomeScreenViewController: BaseViewController {
     @IBOutlet weak var realFeelLabel: UILabel!
     @IBOutlet weak var windSpeedLabel: UILabel!
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder:aDecoder)
-    }
     
-    init(presenter: HomeScreenPresenting) {
-        self.presenter = presenter
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.presenter = Injector.currentInjector.homeScreenPresenter(view: self)
     }
-    
+}
 
+extension HomeScreenViewController: HomeScreenViewable {
     
 }
