@@ -7,5 +7,9 @@
 //
 
 protocol HomeScreenViewable: class {
-    
+    var conditions: String! { get set }
+    var tempurature: String! { get set }
+//    var icon: String! { get set }
+    var realFeel: String! { get set }
+    var windSpeed: String! { get set }
 }

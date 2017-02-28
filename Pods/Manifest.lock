@@ -7,6 +7,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (4.1.3):
     - PromiseKit/CorePromise
+  - RxSwift (3.2.0)
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - PromiseKit/CorePromise
   - PromiseKit/MessageUI
   - PromiseKit/UIKit
+  - RxSwift (~> 3.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
@@ -23,8 +25,9 @@ SPEC CHECKSUMS:
   Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
   Nimble: 8fb9b4b34c535b2f32f52c6b9852d6f02d48610b
   PromiseKit: 56baec63efa89210c023260879435a5a6b3bff00
+  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: c99aba137d5bf61dafc6e6e1d9496bfca1cc43d4
+PODFILE CHECKSUM: f9b321cf3175568814c4a00723af500b8fb52423
 
 COCOAPODS: 1.2.0

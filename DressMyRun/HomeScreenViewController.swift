@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class HomeScreenViewController: BaseViewController {
     var presenter: HomeScreenPresenting!
@@ -23,8 +24,44 @@ class HomeScreenViewController: BaseViewController {
         
         self.presenter = Injector.currentInjector.homeScreenPresenter(view: self)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        presenter.viewWillAppear()
+    }
 }
 
 extension HomeScreenViewController: HomeScreenViewable {
     
+    var conditions: String! {
+        set {
+            conditionsLabel.text = newValue
+        }
+        get {
+            return conditionsLabel.text
+        }
+    }
+    var tempurature: String! {
+        set {
+            tempuratureLabel.text = newValue
+        }
+        get {
+            return tempuratureLabel.text
+        }
+    }    //    var icon: String! { get set }
+    var realFeel: String! {
+        set {
+            realFeelLabel.text = newValue
+        }
+        get {
+            return realFeelLabel.text
+        }
+    }
+    var windSpeed: String! {
+        set {
+            windSpeedLabel.text = newValue
+        }
+        get {
+            return windSpeedLabel.text
+        }
+    }
 }

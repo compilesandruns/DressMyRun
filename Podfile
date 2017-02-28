@@ -16,6 +16,8 @@ abstract_target 'DressMyRunTargets' do
     pod 'PromiseKit/MessageUI'
     pod 'PromiseKit/UIKit'
     pod 'SwiftyJSON'
+    pod 'RxSwift', '~> 3.0'
+
     fakery
     
     target 'DressMyRun'

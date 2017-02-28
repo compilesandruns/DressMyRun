@@ -8,7 +8,9 @@
 
 class Injector {
     var errorHelper: ErrorHelper!
-    
+    var refreshDataInteractor: RefreshDataInteractor!
+    var forecastInteractor: ForecastInteractor!
+
     private static var injector: Injector!
     
     static var currentInjector: Injector {
@@ -21,9 +23,11 @@ class Injector {
     
     init() {
         errorHelper = ErrorHelper()
+        refreshDataInteractor = RefreshDataInteractor()
+        forecastInteractor = ForecastInteracting()
     }
     
     func homeScreenPresenter(view: HomeScreenViewable) -> HomeScreenPresenter {
-        return HomeScreenPresenter(view: view)
+        return HomeScreenPresenter(view: view, refreshDataInteractor: refreshDataInteractor, forecastInteractor: forecastInteractor)
     }
 }
