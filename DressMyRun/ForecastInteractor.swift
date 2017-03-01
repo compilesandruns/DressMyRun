@@ -7,7 +7,15 @@
 //
 
 class ForecastInteractor {
-    init() {
-        
+    private var lastUpdated: String!
+    
+    unowned let memoryCacheDataStore: MemoryCacheDataStoring
+
+    init(memoryCacheDataStore: MemoryCacheDataStoring) {
+        self.memoryCacheDataStore = memoryCacheDataStore
     }
+}
+
+extension ForecastInteractor: ForecastInteracting {
+    
 }

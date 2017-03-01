@@ -95,6 +95,7 @@
 		9A2E25F71E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E25F61E4979EE00EE6EC8 /* SettingsScreen.storyboard */; };
 		9A2E25F81E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E25F61E4979EE00EE6EC8 /* SettingsScreen.storyboard */; };
 		9A2E25F91E4979EE00EE6EC8 /* SettingsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2E25F61E4979EE00EE6EC8 /* SettingsScreen.storyboard */; };
+		9AC806C21E6658BA00B7C826 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9AC806C11E6658BA00B7C826 /* Secrets.plist */; };
 		B4711A19342D785497EDE19F /* Pods_DressMyRunTargets_DressMyRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61ED81B29BBAE01CD78EC67F /* Pods_DressMyRunTargets_DressMyRun.framework */; };
 		C0FA2019A0F3980D5DABC0CD /* Pods_DressMyRunUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F701568089B42C890576745D /* Pods_DressMyRunUITests.framework */; };
 		E04F7CCD990FA427EEB5E0A9 /* Pods_Unit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861D872049E997BAC3079CC7 /* Pods_Unit_Tests.framework */; };
@@ -195,6 +196,7 @@
 		9A2E25EE1E49798900EE6EC8 /* SettingsViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewable.swift; sourceTree = "<group>"; };
 		9A2E25F21E4979A100EE6EC8 /* ManualEntryScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ManualEntryScreen.storyboard; path = DressMyRun/ManualEntryScreen.storyboard; sourceTree = "<group>"; };
 		9A2E25F61E4979EE00EE6EC8 /* SettingsScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SettingsScreen.storyboard; path = DressMyRun/SettingsScreen.storyboard; sourceTree = "<group>"; };
+		9AC806C11E6658BA00B7C826 /* Secrets.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Secrets.plist; path = ../Secrets.plist; sourceTree = "<group>"; };
 		9D6B060ADA754CB316AA841A /* Pods-DressMyRunTargets-DressMyRunUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DressMyRunTargets-DressMyRunUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DressMyRunTargets-DressMyRunUITests/Pods-DressMyRunTargets-DressMyRunUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FE25545D307FDC432FC85EA /* Pods-DressMyRunTargets-Unit Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DressMyRunTargets-Unit Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DressMyRunTargets-Unit Tests/Pods-DressMyRunTargets-Unit Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A395E423D5CD52DB7B9ED6B0 /* Pods_DressMyRunTargets_DressMyRunUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DressMyRunTargets_DressMyRunUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -335,6 +337,7 @@
 		1751ABDF1E4D6F2400E2AE75 /* Environment */ = {
 			isa = PBXGroup;
 			children = (
+				9AC806C11E6658BA00B7C826 /* Secrets.plist */,
 				1751ABDD1E4D6F0B00E2AE75 /* Injector.swift */,
 				172880B21E636F600021DAE7 /* Environment.swift */,
 			);
@@ -688,6 +691,7 @@
 				1773DC051E480E8000822CE3 /* LaunchScreen.storyboard in Resources */,
 				17F474651E5D46D70036E0AE /* blue highway d.ttf in Resources */,
 				1773DC021E480E8000822CE3 /* Assets.xcassets in Resources */,
+				9AC806C21E6658BA00B7C826 /* Secrets.plist in Resources */,
 				17F474631E5D46D70036E0AE /* blue highway bd.ttf in Resources */,
 				9A2E25F31E4979A100EE6EC8 /* ManualEntryScreen.storyboard in Resources */,
 				17F474641E5D46D70036E0AE /* blue highway cd.ttf in Resources */,

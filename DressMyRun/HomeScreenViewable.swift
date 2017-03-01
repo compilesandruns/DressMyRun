@@ -6,7 +6,7 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
-protocol HomeScreenViewable: class {
+protocol HomeScreenViewable: class, AlertViewable {
     var conditions: String! { get set }
     var tempurature: String! { get set }
 //    var icon: String! { get set }

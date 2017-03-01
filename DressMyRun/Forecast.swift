@@ -17,20 +17,22 @@ struct Forecast {
     var realFeelC: Int!
     var windSpeedM: Int!
     var windSpeedK: Int!
+    var lastUpdated: String!
 }
 
 extension Forecast {
     static func fromJSON(json: JSON) throws -> Forecast {
         do {
-            _ = try json.dictionaryValue
+            _ = json.dictionaryValue
             
-            return Forecast(conditions: try json["current_observation"].intValue,
-                            tempF: try json["temp_f"].intValue,
-                            tempC: try json["temp_c"].intValue,
-                            realFeelF: try json["feelslike_f"].intValue,
-                            realFeelC: try json["feelslike_c"].intValue,
-                            windSpeedM: try json["wind_mph"].intValue,
-                            windSpeedK: try json["wind_kph"].intValue)
+            return Forecast(conditions: json["current_observation"].intValue,
+                            tempF: json["temp_f"].intValue,
+                            tempC: json["temp_c"].intValue,
+                            realFeelF: json["feelslike_f"].intValue,
+                            realFeelC: json["feelslike_c"].intValue,
+                            windSpeedM: json["wind_mph"].intValue,
+                            windSpeedK: json["wind_kph"].intValue,
+                            lastUpdated: json["last_updated"].stringValue)
             
         } catch {
             throw JSONError.MappingError(backingError: error)

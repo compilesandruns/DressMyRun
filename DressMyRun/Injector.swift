@@ -24,7 +24,7 @@ class Injector {
     init() {
         errorHelper = ErrorHelper()
         refreshDataInteractor = RefreshDataInteractor()
-        forecastInteractor = ForecastInteracting()
+        forecastInteractor = ForecastInteractor()
     }
     
     func homeScreenPresenter(view: HomeScreenViewable) -> HomeScreenPresenter {

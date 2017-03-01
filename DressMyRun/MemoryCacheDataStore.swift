@@ -10,7 +10,10 @@ import SwiftyJSON
 class MemoryCacheDataStore {
     var cachedConfig: JSON?
     var cachedForecast: [Forecast]!
-    
+
+}
+
+extension MemoryCacheDataStore: MemoryCacheDataStoring {
     func clear() {
         cachedForecast = nil
     }

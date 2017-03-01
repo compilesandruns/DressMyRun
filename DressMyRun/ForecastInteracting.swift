@@ -7,5 +7,5 @@
 //
 
 protocol ForecastInteracting: class {
-    
+    var currentForecast: Forecast! { get }
 }
