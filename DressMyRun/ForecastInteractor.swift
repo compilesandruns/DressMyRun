@@ -6,16 +6,27 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
-class ForecastInteractor {
-    private var lastUpdated: String!
+class ForecastInteractor: ForecastInteracting {
+    private var lastUpdated: String?
     
     unowned let memoryCacheDataStore: MemoryCacheDataStoring
 
     init(memoryCacheDataStore: MemoryCacheDataStoring) {
         self.memoryCacheDataStore = memoryCacheDataStore
     }
-}
-
-extension ForecastInteractor: ForecastInteracting {
+    var currentForecast: Forecast! {
+        
+        guard let lastUpdated = lastUpdated else {
+            return memoryCacheDataStore.cachedForecast
+        }
+        
+        guard let forecast = memoryCacheDataStore.cachedForecast, forecast.lastUpdated == lastUpdated else {
+            return memoryCacheDataStore.cachedForecast
+        }
+        return forecast
+    }
     
+    func setLastUpdated(updated: String) {
+        lastUpdated = updated
+    }
 }

@@ -2,7 +2,7 @@
 //  ErrorHelper.swift
 //  DressMyRun
 //
-//  Created by Stephanie Guevara on 2/9/17.
+//  Created by Stephanie Guevara on 3/5/17.
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
@@ -10,7 +10,8 @@ import Foundation
 import SwiftyJSON
 
 class ErrorHelper: ErrorHelping {
-    func processServerError(error: Error, httpStatusCode: Int, json: JSON? = nil, userInfo: [String: Any]?, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> ErrorDisplaying {
+    
+    func processServerError(_ error: Error, httpStatusCode: Int, json: JSON? = nil, userInfo: [String: Any]?, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> ErrorDisplaying {
         if httpStatusCode >= 500 {
             return ResponseError.ServerError(backingError: error, userInfo: userInfo, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
         }
@@ -31,10 +32,10 @@ class ErrorHelper: ErrorHelping {
             }
         }
         
-        return processError(error: error, userInfo: userInfo, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
+        return processError(error, userInfo: userInfo, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
     }
     
-    func processError(error: Error, userInfo: [String: Any]? = nil, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> ErrorDisplaying {
+    func processError(_ error: Error, userInfo: [String: Any]? = nil, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> ErrorDisplaying {
         if let err = error as? DisplayableError {
             if err.userInfo == nil {
                 err.userInfo = [String: Any]()

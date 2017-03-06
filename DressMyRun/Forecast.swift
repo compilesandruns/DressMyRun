@@ -25,14 +25,14 @@ extension Forecast {
         do {
             _ = json.dictionaryValue
             
-            return Forecast(conditions: json["current_observation"].intValue,
-                            tempF: json["temp_f"].intValue,
-                            tempC: json["temp_c"].intValue,
-                            realFeelF: json["feelslike_f"].intValue,
-                            realFeelC: json["feelslike_c"].intValue,
-                            windSpeedM: json["wind_mph"].intValue,
-                            windSpeedK: json["wind_kph"].intValue,
-                            lastUpdated: json["last_updated"].stringValue)
+            return Forecast(conditions: try json["current_observation"].requiredInt(),
+                            tempF: try json["temp_f"].requiredInt(),
+                            tempC: try json["temp_c"].requiredInt(),
+                            realFeelF: try json["feelslike_f"].requiredInt(),
+                            realFeelC: try json["feelslike_c"].requiredInt(),
+                            windSpeedM: try json["wind_mph"].requiredInt(),
+                            windSpeedK: try json["wind_kph"].requiredInt(),
+                            lastUpdated: try json["last_updated"].requiredString())
             
         } catch {
             throw JSONError.MappingError(backingError: error)

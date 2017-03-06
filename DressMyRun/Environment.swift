@@ -11,4 +11,20 @@ struct Environment {
         static let baseURL = "http://api.wunderground.com/api/"
         static let conditionsQuery = "/conditions/q/"
     }
+    
+    struct LocalStorage {
+        static var lastAppConfigRemoteSyncKey = "com.legalshield.localstorage.dressmyrun.lastAppConfigRemoteSyncKey"
+        static var appConfigKey = "com.legalshield.localstorage.dressmyrun.appConfig"
+
+    }
+    
+    struct UserDefaults {
+        static let metricSystem = "metric"
+        static let imperialSystem = "imperial"
+    }
+    
+    struct GlobalResponseErrorHandler {
+        static let notification = "com.dressmyrun.notification.globalresponse.notification"
+        static let error = "com.dressmyrun.notification.globalresponse.error"
+    }
 }

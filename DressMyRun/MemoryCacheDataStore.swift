@@ -9,8 +9,7 @@ import SwiftyJSON
 
 class MemoryCacheDataStore {
     var cachedConfig: JSON?
-    var cachedForecast: [Forecast]!
-
+    var cachedForecast: Forecast!
 }
 
 extension MemoryCacheDataStore: MemoryCacheDataStoring {

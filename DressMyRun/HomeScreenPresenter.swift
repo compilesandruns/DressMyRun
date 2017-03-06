@@ -6,6 +6,10 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
+enum MeasurementSystem: String {
+    case Imperial = "Imperial", Metric = "Metric"
+}
+
 class HomeScreenPresenter {
     unowned let view: HomeScreenViewable
     unowned let forecastInteractor: ForecastInteracting
@@ -29,13 +33,18 @@ extension HomeScreenPresenter: HomeScreenPresenting {
     func refreshData() {
         _ = refreshDataInteractor.refreshAllData()
             .then { _ -> Void in
-                if let forecast = self.memoryCacheDataStore.cachedForecast {
-                    _ = self.view.showAlert(message: "Please try again later.", title: "Unable to update")
+                
+                self.view.conditions = String(self.forecastInteractor.currentForecast.conditions)
+                
+                if let system = self.memoryCacheDataStore.cachedConfig?["measurement_system"].stringValue, system == Environment.UserDefaults.metricSystem {
+                    self.view.realFeel = String(self.forecastInteractor.currentForecast.realFeelC)
+                    self.view.tempurature = String(self.forecastInteractor.currentForecast.tempC)
+                    self.view.windSpeed = String(self.forecastInteractor.currentForecast.windSpeedK)
+                } else {
+                    self.view.tempurature = String(self.forecastInteractor.currentForecast.tempF)
+                    self.view.windSpeed = String(self.forecastInteractor.currentForecast.windSpeedM)
+                    self.view.realFeel = String(self.forecastInteractor.currentForecast.realFeelF)
                 }
-                self.view.conditions = forecastInteractor.currentForecast.conditions
-                self.view.realFeel = forecastInteractor.currentForecast.realFeel
-                self.view.tempurature = forecastInteractor.currentForecast.tempurature
-                self.view.windSpeed = forecastInteractor.currentForecast.windSpeed
             }
     }
 }

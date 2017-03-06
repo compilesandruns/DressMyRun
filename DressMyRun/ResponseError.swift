@@ -12,12 +12,13 @@ import SwiftyJSON
 class ResponseError {
     class MissingResponse: DisplayableError {
         override var displayMessage: String { return "Sorry, an error has occurred. Please try again." }
-        override var shouldLog: Bool { return true }
     }
     class NotFound: DisplayableError {
-        override var shouldLog: Bool { return true }
+        override var displayMessage: String { return "Sorry, unable to locate the sorce of your request." }
+
     }
     class ServerError: DisplayableError {
-        override var shouldLog: Bool { return true }
+        override var displayMessage: String { return "Sorry, there's an issue with the server. Please try again." }
+
     }
 }

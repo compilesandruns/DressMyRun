@@ -11,7 +11,7 @@ import SwiftyJSON
 protocol MemoryCacheDataStoring: class {
     var cachedConfig: JSON? { get set }
     
-    var cachedForecast: [Forecast]! { get set }
+    var cachedForecast: Forecast! { get set }
     
     func clear()
 }

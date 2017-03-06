@@ -8,19 +8,24 @@
 
 import PromiseKit
 
-class RefreshDataInteractor {
+class RefreshDataInteractor: RefreshDataInteracting {
+    unowned let wuApiInteractor: WUApiInteracting
+    unowned let appConfigInteractor: AppConfigInteracting
+    unowned let memoryCacheDataStore: MemoryCacheDataStoring
+
     var isRefreshing = false
 
     init() {
-        
-    }
-}
 
-extension RefreshDataInteractor: RefreshDataInteracting {
-    
-    
-    
+    }
+
     func refreshAllData() -> Promise<Void> {
-        return Promise(value:())
+        
+        if isRefreshing {
+            return Promise(error: RequestError.AlreadyProcessing())
+        }
+        isRefreshing = true
+        
+        return App
     }
 }

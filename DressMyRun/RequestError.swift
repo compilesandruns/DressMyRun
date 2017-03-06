@@ -11,13 +11,10 @@ import Foundation
 
 class RequestError {
     class MissingParameters: DisplayableError {
-        override var shouldLog: Bool { return true }
     }
     class Unauthorized: DisplayableError {
-        override var shouldLog: Bool { return true }
     }
     class BadRequest: DisplayableError {
-        override var shouldLog: Bool { return true }
     }
 }
 

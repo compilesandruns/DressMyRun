@@ -12,7 +12,6 @@ protocol ErrorDisplaying: class, Error, CustomStringConvertible, CustomDebugStri
     var errorName: String { get }
     var displayTitle: String { get }
     var displayMessage: String { get }
-    var shouldLog: Bool { get }
 }
 
 //MARK: - Debugging

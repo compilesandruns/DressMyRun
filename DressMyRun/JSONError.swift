@@ -10,12 +10,9 @@ import Foundation
 
 class JSONError {
     class NullOrEmpty: DisplayableError {
-        override var shouldLog: Bool { return true }
     }
     class Invalid: DisplayableError {
-        override var shouldLog: Bool { return true }
     }
     class MappingError: DisplayableError {
-        override var shouldLog: Bool { return true }
     }
 }

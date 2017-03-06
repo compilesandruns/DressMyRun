@@ -26,7 +26,6 @@ class DisplayableError: ErrorDisplaying {
     var errorName: String { return "\(Mirror(reflecting: self).subjectType)" }
     var displayTitle: String { return "Error" }
     var displayMessage: String { return "Sorry, an error occurred. Please try again later." }
-    var shouldLog: Bool { return false }
     
     //MARK: Debugging
     var debugDescription: String {

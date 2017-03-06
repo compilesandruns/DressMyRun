@@ -8,9 +8,13 @@
 
 class Injector {
     var errorHelper: ErrorHelper!
-    var refreshDataInteractor: RefreshDataInteractor!
-    var forecastInteractor: ForecastInteractor!
-
+    
+    var refreshDataInteractor: RefreshDataInteracting!
+    var forecastInteractor: ForecastInteracting!
+    
+    var memoryCacheDataStore: MemoryCacheDataStoring!
+    var wuRemoteDataStore: WURemoteDataStoring!
+    
     private static var injector: Injector!
     
     static var currentInjector: Injector {
@@ -24,10 +28,14 @@ class Injector {
     init() {
         errorHelper = ErrorHelper()
         refreshDataInteractor = RefreshDataInteractor()
-        forecastInteractor = ForecastInteractor()
+        
+        memoryCacheDataStore = MemoryCacheDataStore()
+        wuRemoteDataStore = WURemoteDataStore()
+        
+        forecastInteractor = ForecastInteractor(memoryCacheDataStore: memoryCacheDataStore)
     }
     
     func homeScreenPresenter(view: HomeScreenViewable) -> HomeScreenPresenter {
-        return HomeScreenPresenter(view: view, refreshDataInteractor: refreshDataInteractor, forecastInteractor: forecastInteractor)
+        return HomeScreenPresenter(view: view, forecastInteractor: forecastInteractor, refreshDataInteractor: refreshDataInteractor, memoryCacheDataStore: memoryCacheDataStore)
     }
 }
