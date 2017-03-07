@@ -6,6 +6,8 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
+import PromiseKit
+
 protocol WUApiInteracting: class {
-    
+    func fetchForecast(latitude: String, longitude: String) -> Promise<Forecast>
 }

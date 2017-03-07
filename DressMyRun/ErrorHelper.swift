@@ -9,9 +9,9 @@
 import Foundation
 import SwiftyJSON
 
-class ErrorHelper: ErrorHelping {
+class ErrorHelper: DisplayableError {
     
-    func processServerError(_ error: Error, httpStatusCode: Int, json: JSON? = nil, userInfo: [String: Any]?, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> ErrorDisplaying {
+    func processServerError(_ error: Error, httpStatusCode: Int, json: JSON? = nil, userInfo: [String: Any]?, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> DisplayableError {
         if httpStatusCode >= 500 {
             return ResponseError.ServerError(backingError: error, userInfo: userInfo, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
         }
@@ -35,7 +35,7 @@ class ErrorHelper: ErrorHelping {
         return processError(error, userInfo: userInfo, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
     }
     
-    func processError(_ error: Error, userInfo: [String: Any]? = nil, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> ErrorDisplaying {
+    func processError(_ error: Error, userInfo: [String: Any]? = nil, errorSourceFile: StaticString = #file, errorSourceLine: Int = #line, errorSourceFunction: StaticString = #function) -> DisplayableError {
         if let err = error as? DisplayableError {
             if err.userInfo == nil {
                 err.userInfo = [String: Any]()
@@ -45,7 +45,7 @@ class ErrorHelper: ErrorHelping {
             return err
         }
         
-        if let err = error as? ErrorDisplaying {
+        if let err = error as? DisplayableError {
             return err
         }
         

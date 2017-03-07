@@ -11,9 +11,12 @@ class Injector {
     
     var refreshDataInteractor: RefreshDataInteracting!
     var forecastInteractor: ForecastInteracting!
+    var locationInteractor: LocationInteracting!
+    var wuApiInteractor: WUApiInteracting!
     
     var memoryCacheDataStore: MemoryCacheDataStoring!
     var wuRemoteDataStore: WURemoteDataStoring!
+    var localKeyValueDataStore: JSONKeyValueDataStoring!
     
     private static var injector: Injector!
     
@@ -27,12 +30,15 @@ class Injector {
     
     init() {
         errorHelper = ErrorHelper()
-        refreshDataInteractor = RefreshDataInteractor()
-        
+
         memoryCacheDataStore = MemoryCacheDataStore()
         wuRemoteDataStore = WURemoteDataStore()
+        localKeyValueDataStore = LocalKeyValueDataStore()
         
+        wuApiInteractor = WUApiInteractor(wuRemoteDataStore: wuRemoteDataStore, memoryCacheDataStore: memoryCacheDataStore)
+        locationInteractor = LocationInteractor(localKeyValueDataStore: localKeyValueDataStore)
         forecastInteractor = ForecastInteractor(memoryCacheDataStore: memoryCacheDataStore)
+        refreshDataInteractor = RefreshDataInteractor(wuApiInteractor: wuApiInteractor, locationInteractor: locationInteractor, memoryCacheDataStore: memoryCacheDataStore)
     }
     
     func homeScreenPresenter(view: HomeScreenViewable) -> HomeScreenPresenter {

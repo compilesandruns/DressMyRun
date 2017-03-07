@@ -24,7 +24,7 @@ class WURemoteDataStore: WURemoteDataStoring {
         
         return request.json(false, encoding: encoding, asyncCallSourceFile: asyncCallSourceFile, asyncCallSourceLine: asyncCallSourceLine, asyncCallSourceFunction: asyncCallSourceFunction).then { json -> Promise<JSON> in
             guard let json = json, json != JSON.null && !json.isEmpty else {
-                throw ResponseError.MissingResponse(userInfo: ["url": request.url, "params": request.params])
+                throw ResponseError.MissingResponse(userInfo: ["url": request.url, "params": request.params ?? [:]])
             }
             return Promise(value: json)
         }

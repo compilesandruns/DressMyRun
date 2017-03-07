@@ -10,13 +10,15 @@ import PromiseKit
 
 class RefreshDataInteractor: RefreshDataInteracting {
     unowned let wuApiInteractor: WUApiInteracting
-    unowned let appConfigInteractor: AppConfigInteracting
+    unowned let locationInteractor: LocationInteracting
     unowned let memoryCacheDataStore: MemoryCacheDataStoring
 
     var isRefreshing = false
 
-    init() {
-
+    init(wuApiInteractor: WUApiInteracting, locationInteractor: LocationInteracting, memoryCacheDataStore: MemoryCacheDataStoring) {
+        self.wuApiInteractor = wuApiInteractor
+        self.locationInteractor = locationInteractor
+        self.memoryCacheDataStore = memoryCacheDataStore
     }
 
     func refreshAllData() -> Promise<Void> {
@@ -26,6 +28,6 @@ class RefreshDataInteractor: RefreshDataInteracting {
         }
         isRefreshing = true
         
-        return App
+//        wuApiInteractor.fetchForecast()
     }
 }

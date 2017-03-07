@@ -6,15 +6,13 @@
 //  Copyright © 2017 Stephanie Guevara. All rights reserved.
 //
 
-import RxSwift
+import CoreLocation
 
-class LocationInteractor {
-//    private func setupLocationObserver() {
-//        Location.currentLocation.asObservable()
-//            .subscribe(onNext: {
-//                chocolates in
-//                self.cartButton.title = "\(chocolates.count) \u{1f36b}"
-//            })
-//            .addDisposableTo(disposeBag)
-//    }
+class LocationInteractor: LocationInteracting {
+    let localKeyValueDataStore: JSONKeyValueDataStoring!
+    
+    init(localKeyValueDataStore: JSONKeyValueDataStoring) {
+        self.localKeyValueDataStore = localKeyValueDataStore
+    }
+    
 }

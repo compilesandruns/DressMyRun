@@ -7,6 +7,11 @@
 //
 
 struct Environment {
+    
+    struct AppConfig {
+        static let refreshInterval = 600
+    }
+    
     struct WU {
         static let baseURL = "http://api.wunderground.com/api/"
         static let conditionsQuery = "/conditions/q/"

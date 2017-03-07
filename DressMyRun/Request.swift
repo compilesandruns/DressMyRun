@@ -104,41 +104,14 @@ class Request {
                     if let data = response.data {
                         json = JSON(data: data)
                     }
-                    
-                    //TODO fix segmentation fault
-                    
-                    var displayableError = DisplayableError()
-                    
-                    let errorSourceFile: StaticString = #file
-                    let errorSourceLine: Int = #line
-                    let errorSourceFunction: StaticString = #function
-                    guard let httpStatusCode = response.response?.statusCode else {
-                        return reject(AppError.UnknownError())
-                    }
-                    
-                    if httpStatusCode >= 500 {
-                        displayableError = ResponseError.ServerError(backingError: error, userInfo: nil, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
-                    }
-                    
-                    if httpStatusCode == 404 {
-                        displayableError = ResponseError.NotFound(backingError: error, userInfo: nil, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
-                    }
-                    
-                    if httpStatusCode == 401 {
-                        displayableError = RequestError.Unauthorized(backingError: error, userInfo: nil, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
-                    }
-                    
-                    if httpStatusCode == 400 {
-                        if let validationError = ValidationError(json: json, backingError: error, userInfo: nil, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction) {
-                            displayableError = validationError
-                        } else {
-                            displayableError = RequestError.BadRequest(backingError: error, userInfo: nil, errorSourceFile: errorSourceFile, errorSourceLine: errorSourceLine, errorSourceFunction: errorSourceFunction)
-                        }
-                    }
-                    
+            
+                    let displayableError = self.errorHelper.processServerError(error, httpStatusCode: response.response?.statusCode ?? 0, json: json, userInfo: ["url": self.url, "params": self.params ?? [:] , "headers": self.headers ?? [:]])
+                                        
                     reject(displayableError)
                 }
         }
         return promise
+
     }
 }
+
